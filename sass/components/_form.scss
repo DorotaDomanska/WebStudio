@@ -1,0 +1,185 @@
+.form {
+  text-align: center;
+  padding: 2px 32px 32px;
+}
+
+.form__header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor("header");
+  margin-bottom: 12px;
+}
+
+.form__inputs-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 448px;
+  height: 342px;
+  margin: auto;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: getColor("text");
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 10px;
+
+  &:focus-within {
+    fill: getColor("brand-color");
+  }
+}
+
+.form__title {
+  padding-bottom: 4px;
+}
+
+.form__input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 11px 11px 11px 42px;
+
+  &:focus {
+    border-color: getColor("brand-color");
+    outline: none;
+  }
+
+  &--comment {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus-within {
+      border-color: getColor("brand-color");
+      outline: none;
+    }
+  }
+}
+
+.form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+
+  .form__input:focus-within & {
+    fill: getColor("brand-color");
+  }
+}
+
+.checkbox {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: getColor("text");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.checkbox__input {
+  position: absolute;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  &:checked + .checkbox__label .checkbox__icon svg {
+    visibility: visible;
+  }
+}
+
+.checkbox__label {
+  user-select: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+}
+
+.checkbox__label .checkbox__icon {
+  position: relative;
+  width: 16px;
+  height: 15px;
+  top: 4px;
+  border-radius: 3px;
+  border: 2px solid #212121;
+
+  & svg {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    visibility: hidden;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.checkbox__rules {
+  padding-left: 8px;
+
+  & a {
+    color: getColor("brand-color");
+  }
+}
+
+.form-footer {
+  width: 570px;
+  height: 86px;
+  margin-top: 12px;
+  margin-left: 78px;
+}
+
+.form-footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.form-footer-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-footer__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  outline: none;
+  color: #fff;
+
+  &:focus {
+    border: 1px solid getColor("brand-color");
+  }
+}

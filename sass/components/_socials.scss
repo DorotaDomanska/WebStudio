@@ -1,0 +1,37 @@
+.socials {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.team__socials {
+    margin-top: 16px;
+}
+  
+.socials__link {
+    display: flex;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+  
+  &--team {
+    color: getColor('icons');
+  }
+
+  &--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: getColor('brand-color');
+    color: #ffffff;
+  }
+}
+  
+.socials__icon {
+    padding: 12px;
+    fill: currentColor;
+}

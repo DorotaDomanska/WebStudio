@@ -1,0 +1,29 @@
+.main-header {
+    background-color: getColor('background-1');
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/new-photo.jpg);
+    background-size: cover;
+    background-position: 0px -150px;
+  }
+  
+.main-header__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.main-header__header {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 200px;
+  }

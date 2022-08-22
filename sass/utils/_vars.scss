@@ -1,0 +1,12 @@
+$colors: (
+'brand-color': #2196f3,
+'background-1': #2f303a,
+'background-2': #f5f4fa,
+'header': #212121,
+'text': #757575,
+'icons': #afb1b8,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+  }
