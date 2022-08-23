@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: getColor("text");
-  width: 1600px;
+  width: 767px;
   margin: auto;
   box-shadow: 12px 0 15px -4px rgb(0 0 0 / 20%),
     -12px 0 15px -4px rgb(0 0 0 / 20%);
@@ -18,15 +18,15 @@ p {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &--advantages {
     padding-bottom: 0px;
@@ -39,7 +39,7 @@ p {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: getColor("header");
   margin-top: 0px;
 }
