@@ -1,3 +1,33 @@
 .page-header {
   border-bottom: 1px solid #ececec;
 }
+
+@media screen and (min-width: 768px) {
+  .page-header__flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+  .page-header__left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+  .page-header__right {
+  display: flex;
+  justify-content: flex-end;
+}
+  .page-header a:hover, .page-header a:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__flex-box {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  }
+}

@@ -5,7 +5,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
 
   &__web {
     color: getColor("brand-color");
@@ -17,5 +16,17 @@
 
   &__studio--footer {
     color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 83px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
   }
 }
