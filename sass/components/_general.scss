@@ -1,22 +1,9 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: getColor("text");
-  width: 767px;
   margin: auto;
   box-shadow: 12px 0 15px -4px rgb(0 0 0 / 20%),
     -12px 0 15px -4px rgb(0 0 0 / 20%);
-}
-
-@media screen and (min-width: 768px) {
-  .body {
-    width: 1199px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .body {
-    width: 1600px;
-  }
 }
 
 ul {
@@ -29,8 +16,13 @@ p {
   margin: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
 .container {
   max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
