@@ -1,8 +1,15 @@
 .cards {
   list-style-type: none;
-  display: flex;
+}
 
-  &--what-we-do {
+@media screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards--what-we-do {
     justify-content: space-between;
   }
 }

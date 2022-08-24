@@ -146,11 +146,22 @@
   }
 }
 
-.form-footer {
-  width: 570px;
-  height: 86px;
-  margin-top: 12px;
-  margin-left: 78px;
+@media screen and (max-width: 1199px) {
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    width: 570px;
+    height: 86px;
+    margin-top: 12px;
+    margin-left: 78px;
+  }
 }
 
 .form-footer__title {
@@ -162,10 +173,21 @@
   color: #ffffff;
 }
 
-.form-footer-div {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+@media screen and (max-width: 1199px) {
+  .form-footer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
 }
 
 .form-footer__input {

@@ -31,6 +31,10 @@ h1 {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &--what-we-do {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -41,16 +45,27 @@ h1 {
     &--advantages {
       padding-bottom: 0px;
     }
+
+    &--what-we-do {
+      display: block;
+    }
   }
 }
 
 .section__header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   color: getColor("header");
   margin-top: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__header {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
