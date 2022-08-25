@@ -2,20 +2,29 @@
   list-style-type: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .advantages__item {
+    text-align: center;
+  }
+
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199) {
   .advantages {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 30px;
   }
 }
 
-.advantages__item {
-  text-align: center;
-}
-
-.advantages__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .advantages {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .advantages__header {

@@ -4,7 +4,7 @@
   gap: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .clients {
     flex-wrap: wrap;
   }
@@ -28,6 +28,18 @@
     border: 1px solid getColor("brand-color");
     color: getColor("brand-color");
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
