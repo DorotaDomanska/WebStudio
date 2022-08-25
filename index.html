@@ -48,7 +48,7 @@
             <div class="page-header__menu">
               <a class="page-header__menu-link .js-open-menu" href="#">
                 <svg width="40" height="40">
-                    <use href="./images/icons3.svg#icon-menu"></use>
+                  <use href="./images/icons3.svg#icon-menu"></use>
                 </svg>
               </a>
               <!-- <div class="menu .js-menu-container .is-open">
@@ -124,9 +124,9 @@
                   href="mailto:info@devstudio.com"
                 >
                   <svg class="contact__icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>info@devstudio.com</a
-                >
+                    <use href="./images/icons.svg#icon-envelope"></use></svg
+                  >info@devstudio.com
+                </a>
               </div>
               <div class="contact">
                 <a class="contact__link" href="tel:+48111111111">
@@ -235,9 +235,11 @@
       <div class="section section--advantages container">
         <ul class="advantages">
           <li class="advantages__item">
-            <svg width="450" height="120">
-              <use href="./images/icons.svg#icon-Group-1"></use>
-            </svg>
+            <div class="advantages__icon-div">
+              <svg width="65.32" height="70">
+                <use href="./images/icons4.svg#icon-antenna"></use>
+              </svg>
+            </div>
             <h3 class="advantages__header">LOREM IPSUM</h3>
             <p class="advantages__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -245,9 +247,11 @@
             </p>
           </li>
           <li class="advantages__item">
-            <svg width="450" height="120">
-              <use href="./images/icons.svg#icon-Group-2"></use>
-            </svg>
+            <div class="advantages__icon-div">
+              <svg width="65.32" height="70">
+                <use href="./images/icons4.svg#icon-clock"></use>
+              </svg>
+            </div>
             <h3 class="advantages__header">LOREM IPSUM</h3>
             <p class="advantages__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -255,9 +259,11 @@
             </p>
           </li>
           <li class="advantages__item">
-            <svg width="450" height="120">
-              <use href="./images/icons.svg#icon-Group-3"></use>
-            </svg>
+            <div class="advantages__icon-div">
+              <svg width="65.32" height="70">
+                <use href="./images/icons4.svg#icon-diagram"></use>
+              </svg>
+            </div>
             <h3 class="advantages__header">LOREM IPSUM</h3>
             <p class="advantages__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -265,20 +271,21 @@
             </p>
           </li>
           <li class="advantages__item">
-            <svg width="450" height="120">
-              <use href="./images/icons.svg#icon-Group-4"></use>
-            </svg>
+            <div class="advantages__icon-div">
+              <svg width="65.32" height="70">
+                <use href="./images/icons4.svg#icon-astronaut"></use>
+              </svg>
+            </div>
             <h3 class="advantages__header">LOREM IPSUM</h3>
             <p class="advantages__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
+        </ul>
       </div>
       <div class="section section--what-we-do container">
-        <h2 class="section__header">
-          Czym się zajmujemy
-        </h2>
+        <h2 class="section__header">Czym się zajmujemy</h2>
         <ul class="cards cards--what-we-do">
           <li>
             <div class="cards__images-div">
@@ -392,8 +399,9 @@
                     frontend-developer-450.jpg 450w,
                     frontend-developer-540.jpg 540w,
                     frontend-developer-708.jpg 708w,
-                    frontend-developer-900.jpg 900w"
-                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                    frontend-developer-900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
                 />
                 <figcaption class="team__figcaption">
                   <h4 class="team__name">John Doe</h4>
@@ -614,16 +622,20 @@
           <div class="page-footer__box">
             <a class="logo" href="./index.html"
               ><span class="logo__web">Web</span
-                ><span class="logo__studio--footer">Studio</span></a
+              ><span class="logo__studio--footer">Studio</span></a
             >
-            <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+            <address class="address">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
             <address>
               <a
                 class="address__link address__link--mail"
                 href="mailto:info@example.com"
-              >info@example.com</a>
+                >info@example.com</a
+              >
               <a class="address__link" href="tel:++48111111111"
-                >+48 111 111 111</a>
+                >+48 111 111 111</a
+              >
             </address>
           </div>
           <div class="page-footer__socials-div">
@@ -633,7 +645,7 @@
                 <a
                   class="socials__link socials__link--footer"
                   href="https://www.instagram.com/"
-                  >
+                >
                   <svg class="socials__icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
@@ -643,16 +655,17 @@
                 <a
                   class="socials__link socials__link--footer"
                   href="https://twitter.com/"
-                 >
+                >
                   <svg class="socials__icon" width="44" height="44">
-                   <use href="./images/icons.svg#icon-twitter-1"></use>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a
                   class="socials__link socials__link--footer"
-                  href="https://www.facebook.com/">
+                  href="https://www.facebook.com/"
+                >
                   <svg class="socials__icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
@@ -662,7 +675,7 @@
                 <a
                   class="socials__link socials__link--footer"
                   href="https://www.linkedin.com/"
-                  >
+                >
                   <svg class="socials__icon" width="44" height="44">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
@@ -683,7 +696,10 @@
               id="email-newsletter"
               placeholder="E-mail"
             />
-            <button class="button button--footer" type="submit">Zapisz się<svg width="24" height="24"><use href="./images/icons2.svg#icon-send"></use></svg>
+            <button class="button button--footer" type="submit">
+              Zapisz się<svg width="24" height="24">
+                <use href="./images/icons2.svg#icon-send"></use>
+              </svg>
             </button>
           </div>
         </form>

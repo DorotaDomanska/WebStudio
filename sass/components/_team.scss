@@ -4,7 +4,6 @@
 
 @media screen and (max-width: 767px) {
   .team {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
@@ -13,7 +12,8 @@
 
 @media screen and (min-width: 768px) {
   .team {
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 30px;
   }
 }
