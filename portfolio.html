@@ -28,14 +28,12 @@
               <nav>
                 <ul class="navigation">
                   <li class="navigation__item">
-                    <a
-                      class="navigation__link navigation__link--underlined"
-                      href="index.html"
-                      >Agencja</a
-                    >
+                    <a class="navigation__link" href="index.html">Agencja</a>
                   </li>
                   <li class="navigation__item">
-                    <a class="navigation__link" href="portfolio.html"
+                    <a
+                      class="navigation__link navigation__link--underlined"
+                      href="portfolio.html"
                       >Portfolio</a
                     >
                   </li>
@@ -45,6 +43,96 @@
                 </ul>
               </nav>
             </div>
+            <div class="page-header__menu">
+              <a class="page-header__menu-link js-open-menu" href="#">
+                <svg width="40" height="40">
+                  <use href="./images/icons3.svg#icon-menu"></use>
+                </svg>
+              </a>
+              <div class="menu js-menu-container">
+                <div class="menu__button-close-div">
+                  <button class="menu__button-close js-close-menu">
+                    <svg width="40" height="40">
+                      <use href="./images/icons3.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="menu__box">
+                  <div class="menu__navigation-div">
+                    <nav>
+                      <ul class="menu__navigation">
+                        <li class="menu__item">
+                          <a class="menu__link" href="index.html">Agencja</a>
+                        </li>
+                        <li class="menu__item">
+                          <a class="menu__link" href="portfolio.html"
+                            >Portfolio</a
+                          >
+                        </li>
+                        <li class="menu__item">
+                          <a class="menu__link" href="/kontakt">Kontakt</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="menu__bottom">
+                    <div class="menu__contact-div">
+                      <a
+                        class="menu__link menu__link--telephone"
+                        href="tel:+48111111111"
+                        >+48 111 111 111</a
+                      >
+                      <a
+                        class="menu__link menu__link--mail"
+                        href="mailto:info@devstudio.com"
+                        >info@devstudio.com</a
+                      >
+                    </div>
+                    <div class="menu__socials-div">
+                      <ul class="menu__socials">
+                        <li>
+                          <a
+                            class="menu__link menu__link--socials"
+                            href="https://www.instagram.com/"
+                            >Instagram</a
+                          >
+                        </li>
+                        <li>
+                          <p class="menu__pipe">|</p>
+                        </li>
+                        <li>
+                          <a
+                            class="menu__link menu__link--socials"
+                            href="https://twitter.com/"
+                            >Twitter</a
+                          >
+                        </li>
+                        <li>
+                          <p class="menu__pipe">|</p>
+                        </li>
+                        <li>
+                          <a
+                            class="menu__link menu__link--socials"
+                            href="https://facebook.com/"
+                            >Facebook</a
+                          >
+                        </li>
+                        <li>
+                          <p class="menu__pipe">|</p>
+                        </li>
+                        <li>
+                          <a
+                            class="menu__link menu__link--socials"
+                            href="https://linkedin.com/"
+                            >LinkedIn</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="page-header__right">
               <div class="contact">
                 <a
@@ -52,9 +140,10 @@
                   href="mailto:info@devstudio.com"
                 >
                   <svg class="contact__icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use></svg
-                  >info@devstudio.com</a
-                >
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
               </div>
               <div class="contact">
                 <a class="contact__link" href="tel:+48111111111">
@@ -101,10 +190,17 @@
                 <div class="portfolio__img">
                   <img
                     class="cards__img"
-                    src="images/technocrack.jpg"
+                    src="images/technocrack-354.jpg"
                     alt="laptop with an open website"
-                    width="370"
-                    height="294"
+                    srcset="
+                      images/technocrack-354.jpg 354w,
+                      images/technocrack-370.jpg 370w,
+                      images/technocrack-450.jpg 450w,
+                      images/technocrack-708.jpg 708w,
+                      images/technocrack-740.jpg 740w,
+                      images/technocrack-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   />
                   <div class="portfolio__overlay">
                     <p class="portfolio__description">
@@ -126,10 +222,17 @@
                 <div class="portfolio__img">
                   <img
                     class="cards__img cards__img--new-orlean"
-                    src="images/new-orlean-vs-golden-star.jpg"
+                    src="images/new-orlean-vs-golden-star-354.jpg"
                     alt="two basketball players"
-                    width="370"
-                    height="294"
+                    srcset="
+                      images/new-orlean-vs-golden-star-354.jpg 354w,
+                      images/new-orlean-vs-golden-star-370.jpg 370w,
+                      images/new-orlean-vs-golden-star-450.jpg 450w,
+                      images/new-orlean-vs-golden-star-708.jpg 708w,
+                      images/new-orlean-vs-golden-star-740.jpg 740w,
+                      images/new-orlean-vs-golden-star-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   />
                   <div class="portfolio__overlay">
                     <p class="portfolio__description">
@@ -153,10 +256,17 @@
                 <div class="portfolio__img">
                   <img
                     class="cards__img"
-                    src="images/the-seafood-restaurant.jpg"
+                    src="images/the-seafood-restaurant-354.jpg"
                     alt="seafood restaurant logo"
-                    width="370"
-                    height="294"
+                    srcset="
+                      images/the-seafood-restaurant-354.jpg 354w,
+                      images/the-seafood-restaurant-370.jpg 370w,
+                      images/the-seafood-restaurant-450.jpg 450w,
+                      images/the-seafood-restaurant-708.jpg 708w,
+                      images/the-seafood-restaurant-740.jpg 740w,
+                      images/the-seafood-restaurant-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   />
                   <div class="portfolio__overlay">
                     <p class="portfolio__description">
@@ -178,10 +288,17 @@
                 <div class="portfolio__img">
                   <img
                     class="cards__img"
-                    src="images/project-prime.jpg"
+                    src="images/project-prime-354.jpg"
                     alt="headphones"
-                    width="370"
-                    height="294"
+                    srcset="
+                      images/project-prime-354.jpg 354w,
+                      images/project-prime-370.jpg 370w,
+                      images/project-prime-450.jpg 450w,
+                      images/project-prime-708.jpg 708w,
+                      images/project-prime-740.jpg 740w,
+                      images/project-prime-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   />
                   <div class="portfolio__overlay">
                     <p class="portfolio__description">
@@ -203,10 +320,17 @@
                 <div class="portfolio__img">
                   <img
                     class="cards__img"
-                    src="images/project-boxes.jpg"
+                    src="images/project-boxes-354.jpg"
                     alt="two boxes"
-                    width="370"
-                    height="294"
+                    srcset="
+                      images/project-boxes-354.jpg 354w,
+                      images/project-boxes-370.jpg 370w,
+                      images/project-boxes-450.jpg 450w,
+                      images/project-boxes-708.jpg 708w,
+                      images/project-boxes-740.jpg 740w,
+                      images/project-boxes-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   />
                   <div class="portfolio__overlay">
                     <p class="portfolio__description">
@@ -228,10 +352,17 @@
                 <div class="portfolio__img">
                   <img
                     class="cards__img"
-                    src="images/inspiration-has-no-borders.jpg"
+                    src="images/inspiration-has-no-borders-354.jpg"
                     alt="monitor with an open website"
-                    width="370"
-                    height="294"
+                    srcset="
+                      images/inspiration-has-no-borders-354.jpg 354w,
+                      images/inspiration-has-no-borders-370.jpg 370w,
+                      images/inspiration-has-no-borders-450.jpg 450w,
+                      images/inspiration-has-no-borders-708.jpg 708w,
+                      images/inspiration-has-no-borders-740.jpg 740w,
+                      images/inspiration-has-no-borders-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   />
                   <div class="portfolio__overlay">
                     <p class="portfolio__description">
@@ -253,10 +384,17 @@
                 <div class="portfolio__img">
                   <img
                     class="cards__img"
-                    src="images/magazine-limited-edition.jpg"
+                    src="images/magazine-limited-edition-354.jpg"
                     alt="magazine opened on the page with the inscription I'm limited edition"
-                    width="370"
-                    height="294"
+                    srcset="
+                      images/magazine-limited-edition-354.jpg 354w,
+                      images/magazine-limited-edition-370.jpg 370w,
+                      images/magazine-limited-edition-450.jpg 450w,
+                      images/magazine-limited-edition-708.jpg 708w,
+                      images/magazine-limited-edition-740.jpg 740w,
+                      images/magazine-limited-edition-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   />
                   <div class="portfolio__overlay">
                     <p class="portfolio__description">
@@ -278,10 +416,17 @@
                 <div class="portfolio__img">
                   <img
                     class="cards__img"
-                    src="images/label-tag.jpg"
+                    src="images/label-tag-354.jpg"
                     alt="label"
-                    width="370"
-                    height="294"
+                    srcset="
+                      images/label-tag-354.jpg 354w,
+                      images/label-tag-370.jpg 370w,
+                      images/label-tag-450.jpg 450w,
+                      images/label-tag-708.jpg 708w,
+                      images/label-tag-740.jpg 740w,
+                      images/label-tag-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   />
                   <div class="portfolio__overlay">
                     <p class="portfolio__description">
@@ -303,10 +448,17 @@
                 <div class="portfolio__img">
                   <img
                     class="cards__img"
-                    src="images/growing-business.jpg"
+                    src="images/growing-business-354.jpg"
                     alt="laptop with an open website with the inscription growing business"
-                    width="370"
-                    height="294"
+                    srcset="
+                      images/growing-business-354.jpg 354w,
+                      images/growing-business-370.jpg 370w,
+                      images/growing-business-450.jpg 450w,
+                      images/growing-business-708.jpg 708w,
+                      images/growing-business-740.jpg 740w,
+                      images/growing-business-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   />
                   <div class="portfolio__overlay">
                     <p class="portfolio__description">
@@ -331,7 +483,7 @@
       <div class="container page-footer__ensemble">
         <div class="page-footer--top">
           <div class="page-footer__box">
-            <a class="logo" href="./index.html"
+            <a class="logo logo--footer" href="./index.html"
               ><span class="logo__web">Web</span
               ><span class="logo__studio--footer">Studio</span></a
             >

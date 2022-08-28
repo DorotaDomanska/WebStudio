@@ -10,6 +10,13 @@
   text-align: center;
 }
 
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
 @media screen and (max-width: 767px) {
   .advantages__item {
     text-align: center;
@@ -20,7 +27,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages {
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +44,7 @@
   .advantages {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
   }
 }
 
@@ -47,6 +55,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: getColor("header");
+  margin-bottom: 10px;
 }
 
 .advantages__text {
