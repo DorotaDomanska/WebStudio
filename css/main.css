@@ -170,12 +170,14 @@ figure {
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu.is-open {
-  opacity: 1;
+.menu.js-menu-container {
+  display: none;
+}
+
+.menu.js-menu-container.is-open {
+  display: block;
 }
 
 .menu__button-close-div {
@@ -198,7 +200,7 @@ figure {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
 }
 
 .menu__navigation {
@@ -540,7 +542,7 @@ figure {
 }
 
 .form__input {
-  width: 370px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -551,7 +553,7 @@ figure {
   outline: none;
 }
 .form__input--comment {
-  width: 370px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -560,8 +562,8 @@ figure {
 }
 .form__input--comment::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -572,11 +574,12 @@ figure {
 
 @media screen and (min-width: 1200px) {
   .form__input {
-    width: 448px;
+    width: 100%;
     height: 40px;
   }
-  .form__input--comment {
-    width: 448px;
+  .form__input--comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 .form__icon {
@@ -591,12 +594,12 @@ figure {
 .checkbox {
   margin-top: 20px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
 }
@@ -623,7 +626,7 @@ figure {
   position: relative;
   width: 16px;
   height: 15px;
-  top: 4px;
+  left: 2px;
   border-radius: 3px;
   border: 2px solid #212121;
 }
@@ -637,25 +640,21 @@ figure {
 
 .checkbox__rules {
   padding-left: 8px;
+  text-align: left;
 }
 .checkbox__rules a {
   color: #2196f3;
 }
 
-@media screen and (max-width: 1199px) {
-  .form-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-}
 @media screen and (min-width: 1200px) {
-  .form-footer {
-    width: 570px;
-    height: 86px;
-    margin-top: 12px;
-    margin-left: 78px;
+  .checkbox {
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .checkbox__label .checkbox__icon {
+    top: 4px;
+    left: 0;
   }
 }
 .form-footer__title {
@@ -667,21 +666,6 @@ figure {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
-  .form-footer-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .form-footer-div {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-}
 .form-footer__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -696,12 +680,35 @@ figure {
 }
 
 @media screen and (max-width: 1199px) {
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .form-footer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
   .form-footer__input {
     width: 450px;
     height: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .form-footer {
+    width: 570px;
+    height: 86px;
+    margin-top: 12px;
+    margin-left: 78px;
+  }
+  .form-footer-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
   .form-footer__input {
     width: 358px;
     height: 50px;
@@ -808,6 +815,25 @@ figure {
   background-color: #f5f4fa;
 }
 
+.team__figure {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__figcaption {
+  text-align: center;
+  padding: 30px 122px 24px;
+}
+
+.team__name {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .team {
     flex-direction: column;
@@ -828,19 +854,6 @@ figure {
     padding: 30px 74px 24px;
   }
 }
-.team__figure {
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  text-align: center;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team__figcaption {
-  text-align: center;
-  padding: 30px 122px 24px;
-}
-
 @media screen and (min-width: 1200px) {
   .team {
     justify-content: space-between;
@@ -850,12 +863,6 @@ figure {
     padding: 30px 32px;
   }
 }
-.team__name {
-  color: #212121;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
 .socials {
   list-style-type: none;
   display: flex;
@@ -921,22 +928,24 @@ figure {
   }
 }
 .clients__item {
-  color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__item:hover, .clients__item:focus {
+.clients__link:hover .clients__item, .clients__link:focus .clients__item {
   border: 1px solid #2196f3;
-  color: #2196f3;
-  cursor: pointer;
 }
 
 .clients__link {
-  color: currentColor;
+  color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__link:hover, .clients__link:focus {
+  color: #2196f3;
+  cursor: pointer;
 }
 
 .clients__icon {
@@ -991,8 +1000,7 @@ figure {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer {
-    padding-right: 74px;
-    padding-left: 74px;
+    padding: 60px 60px;
   }
   .page-footer--top {
     flex-direction: row;
@@ -1122,6 +1130,14 @@ figure {
     flex-wrap: wrap;
     gap: 30px;
   }
+  .portfolio__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .portfolio__figure {
   margin: 0;
@@ -1134,8 +1150,6 @@ figure {
 
 .portfolio__img {
   position: relative;
-  width: 370px;
-  height: 294px;
   overflow: hidden;
 }
 
@@ -1174,6 +1188,7 @@ figure {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0px;
   margin-bottom: 4px;
   color: #212121;
 }

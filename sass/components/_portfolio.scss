@@ -1,15 +1,25 @@
 @media screen and (max-width: 767px) {
   .portfolio {
-  flex-direction: column;
-  gap: 30px;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-.portfolio {
-  flex-wrap: wrap;
-  gap: 30px;
+  .portfolio {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .portfolio__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio__figure {
@@ -26,8 +36,6 @@
 
 .portfolio__img {
   position: relative;
-  width: 370px;
-  height: 294px;
   overflow: hidden;
 }
 
@@ -67,6 +75,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0px;
   margin-bottom: 4px;
   color: getColor("header");
 }
