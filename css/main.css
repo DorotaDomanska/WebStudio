@@ -691,11 +691,23 @@ figure {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   outline: none;
   color: #fff;
+  height: 50px;
 }
 .form-footer__input:focus {
   border: 1px solid #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .form-footer {
+    width: 100%;
+  }
+  .form-footer-div {
+    width: 100%;
+  }
+  .form-footer__input {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1199px) {
   .form-footer {
     display: flex;
@@ -711,7 +723,6 @@ figure {
   }
   .form-footer__input {
     width: 450px;
-    height: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
