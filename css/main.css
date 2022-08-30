@@ -265,11 +265,17 @@ figure {
   color: #2196f3;
 }
 
+.menu__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 64px;
+}
+
 .menu__contact-div {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 64px;
 }
 
 .menu__socials {
@@ -1102,7 +1108,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
   }
 }
