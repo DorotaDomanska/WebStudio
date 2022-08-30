@@ -70,6 +70,12 @@
   border-left: 1px solid #eeeeee;
 }
 
+@media screen and (min-width: 768px) and (max-width: 789px) {
+  .portfolio__figcaption--technocrack {
+    padding-bottom: 56px;
+  }
+}
+
 .portfolio__name {
   font-weight: 700;
   font-size: 18px;

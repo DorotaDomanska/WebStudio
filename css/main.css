@@ -31,6 +31,13 @@ figure {
   padding-left: 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .container--portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -177,7 +184,9 @@ figure {
 }
 
 .menu.js-menu-container.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
 }
 
 .menu__button-close-div {
@@ -223,6 +232,9 @@ figure {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__link:hover, .menu__link:focus {
+  color: #2196f3;
+}
+.menu__link--underlined {
   color: #2196f3;
 }
 .menu__link--telephone {
@@ -927,25 +939,21 @@ figure {
     flex-basis: calc((100% - 150px) / 6);
   }
 }
-.clients__item {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  text-align: center;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__link:hover .clients__item, .clients__link:focus .clients__item {
-  border: 1px solid #2196f3;
-}
-
 .clients__link {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .clients__link:hover, .clients__link:focus {
   color: #2196f3;
   cursor: pointer;
+  border: 1px solid #2196f3;
+  outline: none;
 }
 
 .clients__icon {
@@ -1078,6 +1086,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    align-items: center;
     margin-bottom: 40px;
   }
 }
@@ -1183,6 +1192,11 @@ figure {
   border-left: 1px solid #eeeeee;
 }
 
+@media screen and (min-width: 768px) and (max-width: 789px) {
+  .portfolio__figcaption--technocrack {
+    padding-bottom: 56px;
+  }
+}
 .portfolio__name {
   font-weight: 700;
   font-size: 18px;

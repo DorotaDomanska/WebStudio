@@ -13,7 +13,9 @@
 }
 
 .menu.js-menu-container.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
 }
 
 .menu__button-close-div {
@@ -62,6 +64,10 @@
 
   &:hover,
   &:focus {
+    color: getColor("brand-color");
+  }
+
+  &--underlined {
     color: getColor("brand-color");
   }
 
